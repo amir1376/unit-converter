@@ -2,7 +2,6 @@
 
 package ir.amir_ab.unitconverter.type.availabletypes
 
-import unitconverter.type.*
 import java.math.BigDecimal
 import ir.amir_ab.unitconverter.times
 import ir.amir_ab.unitconverter.type.AbstractType

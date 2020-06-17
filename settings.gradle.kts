@@ -1,2 +1,2 @@
-rootProject.name = "UnitConverter"
+rootProject.name = "unit-converter"
 

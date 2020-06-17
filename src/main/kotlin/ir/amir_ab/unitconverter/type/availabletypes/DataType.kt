@@ -5,7 +5,6 @@ package ir.amir_ab.unitconverter.type.availabletypes
 import ir.amir_ab.unitconverter.times
 import ir.amir_ab.unitconverter.type.AbstractType
 import ir.amir_ab.unitconverter.type.RowType
-import unitconverter.type.*
 import java.math.BigDecimal
 
 abstract class DataRowType(
