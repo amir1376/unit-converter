@@ -56,7 +56,7 @@ private fun Number.valueEquals(other: Number): Boolean {
     return bigDecimal().stripTrailingZeros() == other.bigDecimal().stripTrailingZeros()
 }
 
-fun Number.bigDecimal(): BigDecimal {
+fun Any.bigDecimal(): BigDecimal {
     try {
         return when (this) {
             is BigDecimal -> this
