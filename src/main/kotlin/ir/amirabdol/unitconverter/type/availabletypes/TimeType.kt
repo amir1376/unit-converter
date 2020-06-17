@@ -1,11 +1,11 @@
 @file:Suppress("unused")
 
-package ir.amir_ab.unitconverter.type.availabletypes
+package ir.amirabdol.unitconverter.type.availabletypes
 
 import java.math.BigDecimal
-import ir.amir_ab.unitconverter.times
-import ir.amir_ab.unitconverter.type.AbstractType
-import ir.amir_ab.unitconverter.type.RowType
+import ir.amirabdol.unitconverter.times
+import ir.amirabdol.unitconverter.type.AbstractType
+import ir.amirabdol.unitconverter.type.RowType
 
 abstract class TimeRowType(
     override val factor: BigDecimal,

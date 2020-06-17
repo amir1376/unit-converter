@@ -1,10 +1,10 @@
-package ir.amir_ab.unitconverter.type.availabletypes
+package ir.amirabdol.unitconverter.type.availabletypes
 
-import ir.amir_ab.unitconverter.Value
-import ir.amir_ab.unitconverter.div
-import ir.amir_ab.unitconverter.per
-import ir.amir_ab.unitconverter.type.AbstractType
-import ir.amir_ab.unitconverter.bigDecimal
+import ir.amirabdol.unitconverter.Value
+import ir.amirabdol.unitconverter.div
+import ir.amirabdol.unitconverter.per
+import ir.amirabdol.unitconverter.type.AbstractType
+import ir.amirabdol.unitconverter.bigDecimal
 
 class FractionType<A : AbstractType, B : AbstractType>(
     val up: A, val down: B

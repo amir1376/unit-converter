@@ -5,9 +5,9 @@
     "MemberVisibilityCanBePrivate"
 )
 
-package ir.amir_ab.unitconverter.type
+package ir.amirabdol.unitconverter.type
 
-import ir.amir_ab.unitconverter.times
+import ir.amirabdol.unitconverter.times
 import java.math.BigDecimal
 import java.math.MathContext
 import kotlin.math.abs
@@ -31,7 +31,12 @@ class MultipliedRowType(
 }
 
 fun RowType.times(multiplyTo: Number, shortPrefix: String, fullPrefix: String): RowType {
-    return MultipliedRowType(this, multiplyTo, shortPrefix, fullPrefix)
+    return MultipliedRowType(
+        this,
+        multiplyTo,
+        shortPrefix,
+        fullPrefix
+    )
 }
 
 enum class PrefixOfUnit(base: Int, power: Int, val shortName: String, val fullName: String) {

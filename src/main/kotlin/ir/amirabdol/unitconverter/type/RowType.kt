@@ -1,7 +1,7 @@
-package ir.amir_ab.unitconverter.type
+package ir.amirabdol.unitconverter.type
 
-import ir.amir_ab.unitconverter.Value
-import ir.amir_ab.unitconverter.times
+import ir.amirabdol.unitconverter.Value
+import ir.amirabdol.unitconverter.times
 import java.math.BigDecimal
 
 abstract class RowType : AbstractType() {

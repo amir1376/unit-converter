@@ -1,6 +1,6 @@
-package ir.amir_ab.unitconverter.type
+package ir.amirabdol.unitconverter.type
 
-import ir.amir_ab.unitconverter.Value
+import ir.amirabdol.unitconverter.Value
 abstract class AbstractType {
     abstract val shortTypeSymbol: String
     abstract val fullTypeName: String

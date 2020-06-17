@@ -1,9 +1,9 @@
-package ir.amir_ab.unitconverter.type.availabletypes
+package ir.amirabdol.unitconverter.type.availabletypes
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import ir.amir_ab.unitconverter.Value
-import ir.amir_ab.unitconverter.withUnit
+import ir.amirabdol.unitconverter.Value
+import ir.amirabdol.unitconverter.withUnit
 
 internal class DataRowTypeTest {
     @Test
