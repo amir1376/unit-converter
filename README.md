@@ -16,10 +16,10 @@ declaring a custom unit
 //converting from Mb/s to kB/s
     val convertedSpeed=(2 witUnit Mbs).convertTo(kBs)
 ```
-#Supported types
+#Supported types  
 supported types are under `ir.amirabdol.unitconverter.type.availabletypes` package
 you can also create types thats are depends on more than two types like Speed and more by using `FractionType`
 
-#Contribution
+#Contribution  
 you can add another Type and its Units to this project
 or if you found any bug please consider a pull request
