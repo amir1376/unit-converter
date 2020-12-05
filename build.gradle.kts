@@ -20,7 +20,7 @@ with(File("gradle/external.gradle.kts")) {
     }
 }
 group = "ir.amirabdol"
-version = "1.0"
+version = "1.01"
 repositories {
     mavenCentral()
 }

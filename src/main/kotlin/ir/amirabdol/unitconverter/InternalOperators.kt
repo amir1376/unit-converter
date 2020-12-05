@@ -20,7 +20,7 @@ infix fun Number.neq(other: Number): Boolean {
 }
 
 internal fun BigDecimal.removeTrailingZeros(): BigDecimal {
-    val chars = toString().toCharArray()
+    val chars = toPlainString().toCharArray()
     val chSize = chars.size
     if ('.' !in chars) {
         return this

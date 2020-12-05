@@ -26,7 +26,7 @@ class Value<A : AbstractType>(
     }
 
     override fun toString(): String {
-        return "$value $type"
+        return "${value.bigDecimal().toPlainString()} $type"
     }
 
     fun toString(precision: Int): String {
