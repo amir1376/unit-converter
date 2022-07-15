@@ -17,7 +17,7 @@ with(File(rootProject.rootDir, "gradle/external.gradle.kts")) {
     }
 }
 group = "ir.amirabdol"
-version = "1.01"
+version = "1.02"
 repositories {
     mavenCentral()
 }
