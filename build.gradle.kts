@@ -7,14 +7,11 @@ plugins {
     `java-library`
     kotlin("jvm") version "1.3.72"
     `maven-publish`
-    id("com.jfrog.bintray") version "1.8.5"
 }
-ext["localRepoDir"] = File(System.getenv("LOCAL_REPO"))
-ext["githubUrl"] = "hub.com/amir1376/unit-converter"
-val localRepoDir: File by ext
+ext["githubUrl"] = "https://github.com/amir1376/unit-converter"
 val githubUrl: String by ext
 
-with(File("gradle/external.gradle.kts")) {
+with(File(rootProject.rootDir, "gradle/external.gradle.kts")) {
     if (exists()) {
         apply(from = this@with.absolutePath)
     }
@@ -56,30 +53,6 @@ publishing {
         }
     }
     repositories {
-        // a local directory that I save all my repos
-        maven {
-            name = "my-repo"
-            localRepoDir.mkdirs()
-            if (!localRepoDir.exists()) {
-                throw IOException()
-            }
-            url = localRepoDir.toURI()
-        }
-    }
-}
-bintray {
-    user = rootExt["bintray_user"].toString()
-    key = rootExt["bintray_api_key"].toString()
-    pkg.apply {
-        repo = "Libs"
-        name = rootProject.name
-        vcsUrl = githubUrl
-        websiteUrl = githubUrl
-        setPublications(myMavenPublication.name)
-        setLicenses("Apache-2.0")
-        version.apply {
-            name = rootProject.version.toString()
-            released = Date().toString()
-        }
+        mavenLocal()
     }
 }
